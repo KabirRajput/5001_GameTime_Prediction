@@ -32,17 +32,17 @@ xgboost, sklearn, seaborn, matplotlib, numpy, scipy, pandas, xgboost
 
 ## Data cleaning & Normalization
 
-* nan values
+#### nan values  
 Firstly, I checked nan values in every column and found two rows, row 5 and row 76 had nan values for column total_positive_values and total_negative_values. I removed NaN where I found them and had also replaced them with 0/mean/meadian where I found appropriate 
 
-* Categorical-based values
+#### Categorical-based values 
 I used dummy variable for one hot encoding the categorical features
 
-* date
+#### date  
 There are two columns about date. In order to utilize them better, I transformed them from text to python datetime object.
 I further transformed them to difference between the dates to make better use of the data
 
-* True/False
+#### True/False 
 A simple boolean Transformation to 0/1
 
 ## Feature Engineering : A little insights into the features 
@@ -65,6 +65,20 @@ There are 312 different tags in total in training data. I have only chosen the t
 ['Atmospheric', 'Great Soundtrack', 'Story Rich', 'Multiplayer', 'RPG', 'Open World', 'Strategy', 'Co-op', 'Fantasy', 'Sci-fi', 'Masterpiece', 'Simulation', '2D', 'First-Person', 'Puzzle', 'Third Person', 'Shooter', 'Funny', 'Casual', 'Survival', 'Difficult', 'Horror', 'Sandbox', 'Exploration', 'Female Protagonist', 'Early Access', 'Comedy', 'FPS', 'Gore', 'Point & Click', 'Online Co-Op', 'Choices Matter', 'Classic', 'Space', 'VR', 'Violent', 'Turn-Based', 'Platformer', 'Dark', 'Moddable', 'Hack and Slash', 'Local Co-Op', 'Mystery', 'Stealth', 'Nudity', 'Retro', 'Action RPG', 'Psychological Horror', 'Building', 'Isometric', 'Third-Person Shooter', 'Replay Value', 'Pixel Graphics', 'Mature', 'Walking Simulator', 'Short', 'Post-apocalyptic', 'Character Customization', 'Tactical', 'Free to Play', 'Massively Multiplayer', 'Crafting', 'Controller', 'Rogue-like', 'RTS', 'Historical']
 
 ```
+
+## Modelling
+
+First Header  | Second Header
+------------- | -------------
+KNeighborsRegressor  | 3.057698
+ExtraTreesRegressor   | 3.956182
+AdaBoostRegressor  | 4.542664
+ExtraTreeRegressor   | 4.959477
+BaggingRegressor  |  5.249035
+GradientBoostingRegressor   | 5.700217
+RandomForestRegressor  | 5.724474
+PassiveAggressiveRegressor   | 7.688060
+
 
 ## Authors
 
