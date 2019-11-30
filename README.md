@@ -68,7 +68,7 @@ There are 312 different tags in total in training data. I have only chosen the t
 
 ## Modelling
 
-First Header  | Second Header
+Model  | RMSE
 ------------- | -------------
 KNeighborsRegressor  | 3.057698
 ExtraTreesRegressor   | 3.956182
